@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Column Storage App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2 id="alert-message">My Local Storage</h2>
+    <div class="container">
+      <div class="column left">
+        <h3>Add Text</h3>
+        <textarea
+          id="inputText"
+          rows="4"
+          cols="30"
+          placeholder="Write something..."
+        ></textarea
+        ><br />
+        <button id="submitBtn">Submit</button>
+      </div>
+      <div class="column right">
+        <h3>Stored Entries</h3>
+        <ul id="entryList"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

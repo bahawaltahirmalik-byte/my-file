@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #a3f8f1;
+  text-align: center;
+}
+h3,
+h2 {
+  color: rgb(7, 7, 233);
+  font: 2em sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.left {
+  width: 50%; /* fixed width */
+  height: 50%; /* fill container height */
+  overflow-y: auto; /* optional: if content overflows, scroll inside */
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right column fills remaining space */
+.right {
+  flex: 1; /* take remaining space */
+  height: auto; /* same height as container */
+  overflow-y: auto; /* scroll if content too long */
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#entryList {
+  list-style: none;
+  padding: 0;
+}
+
+#entryList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: aqua;
+  border-radius: 50px;
+  cursor: pointer;
+}
